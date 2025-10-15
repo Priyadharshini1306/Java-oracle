@@ -1,4 +1,4 @@
-interface Engine{
+interface Engine{     // Loose coupling 
 	void getStart();
 	static Engine provideEngine(String engine) {
 		if("petrol".equalsIgnoreCase(engine))
