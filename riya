@@ -1,0 +1,14 @@
+class runtime {
+   private static runtime r;
+
+   private runtime() {
+   }
+
+   public static runtime getInstance() {
+      if (r == null) {
+         r = new runtime();
+      }
+
+      return r;
+   }
+}
